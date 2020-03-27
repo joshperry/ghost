@@ -1,0 +1,8 @@
+FROM node:12
+
+WORKDIR /usr/src/ghost
+
+ENV NODE_ENV development
+
+EXPOSE 2368
+CMD ["npm", "run", "dev"]
